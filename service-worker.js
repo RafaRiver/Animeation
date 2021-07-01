@@ -6,6 +6,7 @@ const precache = [
   './js/register-sw.js',
   './js/app.js',
   './index.html',
+  './buscador.html',
   './offline.html',
   './css/style.css',
   './css/styleoff.css',
