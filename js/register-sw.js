@@ -1,13 +1,18 @@
 // Chequeo si el browser puede usar Service Worker
-if (navigator.serviceWorker.register('../service-worker.js')){
-    console.log("Service Worker está activo");
-}else {
-    console.log("Service Worker no está activo");
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('../service-worker.js')
+      .then(reg => {
+        console.log("Service worker esta listo!");
+      });
+}
+else {
+  console.log("Service worker no soportado.");
 }
 
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
   document.querySelector('body').classList.add('offline');
+
 });
 
 window.addEventListener('online', event => {
@@ -21,4 +26,7 @@ window.addEventListener('online', event => {
 
 if (!navigator.onLine) {
   document.querySelector('body').classList.add('offline');
+
 }
+
+
