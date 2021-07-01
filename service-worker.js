@@ -20,6 +20,7 @@ const precache = [
   './imagenes/anime01mob.jpg',
   './imagenes/anime02mob.jpg',
   './imagenes/anime03mob.jpg',
+  './imagenes/portada.jpg',
   
 ];
 
