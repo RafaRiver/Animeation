@@ -1,14 +1,13 @@
 window.addEventListener("load", loadPage);
 
 function loadPage() {
-    //Hacemos el DOM de donde vayamos a hacer la búsqueda
+    
     const formulario = document.getElementById("formulario");
     formulario.addEventListener("submit",buscar);
     console.log(formulario);
 }
 
 function buscar(evento) {
-    //console.log(event);
     
     evento.preventDefault();
     
@@ -26,20 +25,18 @@ function datos(datosFetch) {
     //console.log(datosFetch.results);
     const resultadosBusqueda = document.getElementById("informacion");
     
-    /*
-        **metodo: map()**
-        Crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
-    */
     resultadosBusqueda.innerHTML = datosFetch.results
     .map(anime=>{
         return `
-            <img src="${anime.image_url}"/>
-            <p>${anime.title}</p>
-            <p>${anime.synopsis}</p>
-            <p>${anime.score}</p>
-            <p><a href="${anime.url}">Link a la página</a></p>
-            
+            <section class="card col-lg-3 col-md-6 col-sm-12 col-xs-12 justify-content-center card-body my-3">
+                	  	<img src="${anime.image_url}" class="card-img-top img-fluid" alt="portada del ánime">	
+                	    <h5 class="card-title mt-3">${anime.title}</h5>
+                	    <p class="card-text">${anime.synopsis}</p>
+                	    <p><span class="text">Score: </span>${anime.score}</p>
+                	    <a href="${anime.url}" class="btn btn-primary" target="_blank">Link a la página</a>
+            </section>
             `
     })
     
 }
+

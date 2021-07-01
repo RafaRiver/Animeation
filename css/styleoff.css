@@ -1,0 +1,101 @@
+.grid {
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  height: 180px;
+  width: 180px;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.ending-block {
+  background-color: red;
+}
+
+.starting-block {
+  background-color: blue;
+}
+
+.c1 {
+  background-color: black;
+}
+
+.l1, .l2, .l3 {
+  background-color: brown;
+}
+
+.l4, .l5, .lf2, .lf3 {
+  background-color: lightblue;
+}
+
+.c2, .c3 {
+  background-color: grey;
+}
+
+.frog {
+  background-color: darkgreen;
+}
+
+body {
+  background-color: #d79344;
+}
+
+.bg-micolor {
+  background-color: #024488;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.control {
+  color:#024488;
+}
+
+footer {
+  margin:200px;
+    padding:1px;
+    background-color:#024488;
+    margin:auto;
+}
+
+.btn-redes {
+    color: white;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+details {
+    width:max-content;
+    margin: auto;
+    color:white;
+    font-weight: 300;
+    font-family: Ubuntu;
+}
+
+
+ul li a:hover {
+    color:#d79344 !important;
+}
+
+h2 {
+  color:#024488;
+  font-size: 3em;
+
+}
+
+.btn-micolor {
+    background-color: #024488;
+    color: white;
+}
+
+.btn-micolor:hover {
+    color:#d79344;
+}
+

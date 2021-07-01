@@ -1,0 +1,62 @@
+
+body {
+	background-image: url(imagenes/wall-anime.jpg);
+	background-color: #d79344;
+
+}
+
+.bg-micolor {
+	background-color: #024488;
+}
+
+.text {
+	font-weight: bold;
+}
+
+.control {
+	color:#024488;
+}
+
+footer {
+	margin:200px;
+    padding:1px;
+    background-color:#024488;
+    margin:auto;
+}
+
+.btn-redes {
+    color: white;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+details {
+    width:max-content;
+    margin: auto;
+    color:white;
+    font-weight: 300;
+    font-family: Ubuntu;
+}
+
+
+ul li a:hover {
+    color:#d79344;
+}
+
+h2 {
+	color:#024488;
+	font-size: 3em;
+
+}
+
+.btn-micolor {
+    background-color: #024488;
+    color: white;
+}
+
+.btn-micolor:hover {
+    color:#d79344;
+}

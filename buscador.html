@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/styleoff.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <title>Cantero Rafael - DWN3A PWA</title>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
     <!-- LINK AL MANIFEST -->
     <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico">
-  </head>
+</head>
 
 
-  <body>
-    <h1 class="alert-danger">Estoy Offline y el cache fallo!</h1>
+<body>
+
+    <h1 class="alert-success">Estoy Online!</h1>
 
 
-
-    <header>
+<header>
        <nav class="navbar navbar-expand-md navbar-dark bg-micolor p-4">
            <a class="navbar-brand mx-auto" href="index.html"><h1 class="sr-only logo">Animeation</h1>
            <img src="imagenes/logo.png" width="264" height="64" class="d-inline-block align-top" alt="logo animeation">
@@ -45,111 +45,80 @@
               </div>
       </nav>
 </header>
+    
+    <form id="formulario" class="text-center my-5 bg-m">
+        <input type="text" id="input" name="input">
+        <button type="submit" class="bg-micolor text-white">Buscar</button>        
+    </form>
 
-
-
-<section class="container my-5 ">
-  <div class="row justify-content-center">
-  <div class="col-12">
-
-    <h2 class="h1 text-center">Up's, parece que hay problemas =( </h2>
-
-    <p class="h3 p-5">Mientras nuestro equipo técnico lo soluciona podés entretenerte jugando</p>
-
-    <button id="button" class="my-3">Start/Pause</button>
-
-    <h3> Seconds left: <span id="time-left">20</span></h3>
-    <h3 id="result"></h3>
-
-    <div class="game mx-auto">
-      <div class="grid">
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div class="ending-block"></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div class="log-left l1"></div>
-       <div class="log-left l2"></div>
-       <div class="log-left l3"></div>
-       <div class="log-left l4"></div>
-       <div class="log-left l5"></div>
-       <div class="log-left l1"></div>
-       <div class="log-left l2"></div>
-       <div class="log-left l3"></div>
-       <div class="log-left l4"></div>
-       <div class="log-right l5"></div>
-       <div class="log-right l1"></div>
-       <div class="log-right l2"></div>
-       <div class="log-right l3"></div>
-       <div class="log-right l4"></div>
-       <div class="log-right l5"></div>
-       <div class="log-right l1"></div>
-       <div class="log-right l2"></div>
-       <div class="log-right l3"></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div class="car-right c1"></div>
-       <div class="car-right c2"></div>
-       <div class="car-right c3"></div>
-       <div class="car-right c1"></div>
-       <div class="car-right c2"></div>
-       <div class="car-right c3"></div>
-       <div class="car-right c1"></div>
-       <div class="car-right c2"></div>
-       <div class="car-right c3"></div>
-       <div class="car-left c1"></div>
-       <div class="car-left c2"></div>
-       <div class="car-left c3"></div>
-       <div class="car-left c1"></div>
-       <div class="car-left c2"></div>
-       <div class="car-left c3"></div>
-       <div class="car-left c1"></div>
-       <div class="car-left c2"></div>
-       <div class="car-left c3"></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div class="starting-block"></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
+    <section class="mb-5">
+ <div id="carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+            <picture class="img-fluid">
+                <source srcset="imagenes/anime01tab.jpg" type="image/jpg"
+                        media="(min-width:450px) and (max-width:800px)"/>
+                <source srcset="imagenes/anime01.jpg" type="image/jpg" media="(min-width:801px)"/>
+                <img class="card-img-top" src="imagenes/anime01mob.jpg" alt="banner Dragon Ball"/>
+            </picture> 
+      <div class="carousel-caption d-none d-md-block">
+        <p class="h1 bg-micolor w-50 mx-auto">Dragon Ball</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+            <picture class="img-fluid">
+                <source srcset="imagenes/anime02tab.jpg" type="image/jpg"
+                        media="(min-width:450px) and (max-width:800px)"/>
+                <source srcset="imagenes/anime02.jpg" type="image/jpg" media="(min-width:801px)"/>
+                <img class="card-img-top" src="imagenes/anime02mob.jpg" alt="banner Pokemón"/>
+            </picture> 
+      
+      
+      <div class="carousel-caption d-none d-md-block">
+        <p class="h1 bg-micolor w-50 mx-auto">Pokemón</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+            <picture class="img-fluid">
+                <source srcset="imagenes/anime03tab.jpg" type="image/jpg"
+                        media="(min-width:450px) and (max-width:800px)"/>
+                <source srcset="imagenes/anime03.jpg" type="image/jpg" media="(min-width:801px)"/>
+                <img class="card-img-top" src="imagenes/anime03mob.jpg" alt="banner Super Campeones"/>
+            </picture> 
+      
+      
+      
+      <div class="carousel-caption d-none d-md-block">
+        <p class="h1 bg-micolor w-50 mx-auto">Súper Campeones</p>
       </div>
     </div>
 
   </div>
-  </div>
-  </section>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+   
+</section>
+
+
+    <div class="container mt-5">
+       <div class="row justify-content-center" id="informacion">
+       </div> 
+    </div>
+
+
+
 
 
     <footer> 
@@ -194,15 +163,10 @@
                                 
                                                                          
     </footer>
-
-
-
-
+    
     <script src="js/register-sw.js"></script>
     <!-- Optional JavaScript -->
-
-    <script src="js/app.js"></script>
-
+      <script src="js/animeation.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

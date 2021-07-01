@@ -4,8 +4,23 @@ const cacheName = 'cache-version-1';
 // Archivos/Recursos que vamos a "cachear"
 const precache = [
   './js/register-sw.js',
+  '.js/app.js',
   './index.html',
-  './offline.html',    
+  './buscador.html',
+  './offline.html',
+  './css/style.css',
+  './css/styleoff.css',
+  './css/bootstrap.min.css',
+  './imagenes/anime01.jpg',
+  './imagenes/anime02.jpg',
+  './imagenes/anime03.jpg',
+  './imagenes/anime01tab.jpg',
+  './imagenes/anime02tab.jpg',
+  './imagenes/anime03tab.jpg',
+  './imagenes/anime01mob.jpg',
+  './imagenes/anime02mob.jpg',
+  './imagenes/anime03mob.jpg',
+  
 ];
 
 
