@@ -3,7 +3,7 @@ window.addEventListener("load", loadPage);
 function loadPage() {
     
     const formulario = document.getElementById("formulario");
-    formulario.addEventListener("submit",buscar);
+    formulario.addEventListener("submit", buscar);
     console.log(formulario);
 }
 
