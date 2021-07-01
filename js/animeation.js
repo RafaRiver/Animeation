@@ -28,7 +28,7 @@ function datos(datosFetch) {
     resultadosBusqueda.innerHTML = datosFetch.results
     .map(anime=>{
         return `
-            <section class="card col-lg-3 col-md-6 col-sm-12 col-xs-12 justify-content-center card-body my-3">
+            <section class="card col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center card-body my-3">
                 	  	<img src="${anime.image_url}" class="card-img-top img-fluid" alt="portada del ánime">	
                 	    <h5 class="card-title mt-3">${anime.title}</h5>
                 	    <p class="card-text">${anime.synopsis}</p>

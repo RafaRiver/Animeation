@@ -1,8 +1,6 @@
 
 body {
-	background-image: url(imagenes/wall-anime.jpg);
 	background-color: #d79344;
-
 }
 
 .bg-micolor {
@@ -46,7 +44,7 @@ ul li a:hover {
     color:#d79344;
 }
 
-h2 {
+h1 {
 	color:#024488;
 	font-size: 3em;
 
