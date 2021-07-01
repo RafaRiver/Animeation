@@ -11,7 +11,8 @@ else {
 
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
-  document.querySelector('body').classList.add('offline');
+    funcionOffline();
+//  document.querySelector('body').classList.add('offline');
 });
 
 window.addEventListener('online', event => {
@@ -25,4 +26,8 @@ window.addEventListener('online', event => {
 
 if (!navigator.onLine) {
   document.querySelector('body').classList.add('offline');
+}
+
+function funcionOffline() {
+    body.innerHTML ="No hay servicio de internet";
 }
