@@ -45,7 +45,6 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
 
   const cacheWhitelist = [cacheName];
-console.log(precache)
   // Esto es lo que updatea cada una de las keys en el mapa del caché
   event.waitUntil(
       // Tomo las keys y las paso para revisar individualmente
